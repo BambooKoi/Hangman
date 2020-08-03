@@ -24,12 +24,14 @@ def ask():
         if choice.lower() == 'y':
             break
         elif choice.lower() == 'n':
-            input('\nThanks for playing! Hit enter to exit.')
-            sys.exit()
+            close()
         else:
             print(f'\nSorry, I didn\'t understand "{choice}".')
     os.system('cls')
 
+def close():
+    input('\nThanks for playing! Hit enter to exit.')
+    sys.exit()
 
 def playing():
     while True:
@@ -38,14 +40,15 @@ def playing():
         # '(space for space)'.join() = print w/o brackets/quotes/commas
         print(' '.join(blanks))
         print(f"\nPrevious Incorrect Guesses: {' '.join(guesses)}")
-        # Print error message:
+        # Print promp message:
         print(f"\n{''.join(msg)}")
         msg.clear()
 
         if len(guesses) == len(hangman)-2:
             guess = input('This is your LAST guess.\n> ')
         else:
-            guess = input('Enter a letter to guess. Enter "solve" to give up.\n> ')
+            print('Enter a letter to guess.')
+            guess = input('Use "solve" to give up or "quit" to exit.\n> ')
             guess = guess.lower()
 
         if guess == 'solve':
@@ -55,16 +58,18 @@ def playing():
             print(' '.join(blanks))
             print(f'\nThe word was:', ''.join(answer))
             break
+        elif guess == 'quit':
+            close()
         elif len(guess) > 1:
             msg.append('That\'s too many characters! One at a time please.')
         elif guess not in 'abcdefghijklmnopqrstuvwxyz':
-            error = f'"{guess}" is not a letter.'
-            msg.append(error)
+            promp = f'"{guess}" is not a letter.'
+            msg.append(promp)
         elif (guess in guesses) or (guess in blanks):
             msg.append(f'You\'ve already guessed "{guess}". Choose another one.')
         elif guess not in answer:
-            error = f'There are no letter "{guess}"s in this word.'
-            msg.append(error)
+            promp = f'There are no letter "{guess}"s in this word.'
+            msg.append(promp)
             guesses.append(guess)
         else:
             for position, letters in enumerate(answer):  # 1
@@ -88,6 +93,7 @@ def playing():
         elif blanks == answer:
             os.system('cls')
             print(hangman[len(guesses)])
+            print(' '.join(blanks))
             print(f"\nPrevious Incorrect Guesses: {' '.join(guesses)}")
             print(f'\nCongratulations! You guessed the word:', ''.join(answer))
             break
