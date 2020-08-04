@@ -26,7 +26,7 @@ Of course, you can play infinitely until you get bored. Each new word is chosen 
 ### Game Over
 This is what Game Over looks like. Just like the [winning scenario](#Winning), you can play again as many times as you want afterwards.
 
-![Hangman game over screen](demo_images/lose.png)
+![Hangman game over screen](demo_images/lose.png)  #make gif blinking
 
 ### Solve For Me/I Give Up
 Can't figure out the word? Get the answer by with `solve` instead of bashing each letter until you die.
@@ -44,6 +44,7 @@ Trying to guess more than one character at a time is cheating!
 
 ## Built With
 - [Python 3.8](python.org)
+..- Using the built-in modules
 
 ## Requirements
 - Python 3.6 or newer
