@@ -4,15 +4,12 @@ Why not play a game (or more) of Hangman? Made with Python.
 ![Hangman start screen](demo_images/start_screen.png)
 
 ## Table of Contents
-- [Running the Game](#Running-the-Game)
 - [Gameplay](#Gameplay)
 - [Built With](#Built-With)
 - [Requirements](#Requirements)
+- [Running the Game](#Running-the-Game)
 - [License](#License)
 - [Donations (Optional)](#Donations-(Optional))
-
-## Running the Game
-The game requires Python 3.6 or newer. Once you have Python 3.6 or newer installed, download the `hangman.py` file and run it.
 
 ## Gameplay
 You can play this game endlessly. For those who love CAPS, input is case-insensitive but will output as lowercase. See [Not A Letter](#Not-A-Letter) for invalid inputs. All words in the list are animals.
@@ -51,7 +48,13 @@ Trying to guess more than one character at a time is cheating!
     - Using the built-in modules
 
 ## Requirements
-- Python 3.6 or newer
+- [Python 3.6](python.org) or newer
+
+## Running the Game
+The game requires Python 3.6 or newer.
+- Install Python 3.6 or newer
+- Download the `hangman.py` file
+- Run `hangman.py` and enjoy guessing.
 
 ## License
 ![GitHub](https://img.shields.io/github/license/BambooKoi/Hangman)
