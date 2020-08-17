@@ -12,7 +12,7 @@ Why not play a game (or more) of Hangman? Made with Python.
 - [Donations (Optional)](#Donations-(Optional))
 
 ## Running the Game
-The game requires Python 3.6 or newer. Once you have Python 3.6+ installed, download the `hangman.py` file and run it.
+The game requires Python 3.6 or newer. Once you have Python 3.6 or newer installed, download the `hangman.py` file and run it.
 
 ## Gameplay
 You can play this game endlessly. For those who love CAPS, input is case-insensitive but will output as lowercase. See [Not A Letter](#Not-A-Letter) for invalid inputs. All words in the list are animals.
@@ -48,7 +48,7 @@ Trying to guess more than one character at a time is cheating!
 
 ## Built With
 - [Python 3.8](python.org)
-..- Using the built-in modules
+    - Using the built-in modules
 
 ## Requirements
 - Python 3.6 or newer
