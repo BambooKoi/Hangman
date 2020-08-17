@@ -5,14 +5,19 @@ Why not play a game (or more) of Hangman? Made with Python.
 
 ## Table of Contents
 - [Gameplay](#Gameplay)
+    - [Rules](#Rules)
+    - [Winning](#Winning)
+    - [Game Over](#Game-Over)
+    - [Solve For Me/I Give Up](#Solve-For-Me/I-Give-Up)
+    - [Not A Letter](#Not-A-Letter)
 - [Built With](#Built-With)
-- [Requirements](#Requirements)
 - [Running the Game](#Running-the-Game)
 - [License](#License)
+- [Acknowledgements](#Acknowledgements)
 - [Donations (Optional)](#Donations-(Optional))
 
 ## Gameplay
-You can play this game endlessly. For those who love CAPS, input is case-insensitive but will output as lowercase. See [Not A Letter](#Not-A-Letter) for invalid inputs. All words in the list are animals.
+You can play this game endlessly. For those who love CAPS, input is case-insensitive but will output as lowercase. See [Not A Letter](#Not-A-Letter) for invalid inputs. All words in the list are currently animals.
 
 ### Rules
 For those who have never played Hangman, the game requires two players. In this case, the computer is the second player. One player thinks of a word (in this case, the computer), the other player (you) will try to guess the word by guessing the letters in it. For every wrong guess, a picture of a hanged stick man will be revealed until the stick man is hanged. Then it is game over. You win by correctly guessing the thought up word.
@@ -47,14 +52,10 @@ Trying to guess more than one character at a time is cheating!
 - [Python 3.8](python.org)
     - Using the built-in modules
 
-## Requirements
-- [Python 3.6](python.org) or newer
-
 ## Running the Game
-The game requires Python 3.6 or newer.
-- Install Python 3.6 or newer
-- Download the `hangman.py` file
-- Run `hangman.py` and enjoy guessing.
+- Install Python 3.6 or newer. You can grab the latest copy from [python.org].
+- Download the `hangman.py`.
+- Run `hangman.py` and enjoy guessing the word.
 
 ## License
 ![GitHub](https://img.shields.io/github/license/BambooKoi/Hangman)
