@@ -40,23 +40,23 @@ This is what a Game Over scenario looks like. The ASCII stick man updates each t
 ![Hangman game over screen](demo_images/lose.gif)
 
 ### Solve For Me/I Give Up
-Can't figure out the word? Get the answer by with `solve` instead of bashing each letter until you die or to end the game early and access the [Editing Menu](#Editing).
+Can't figure out the word? Get the answer with `solve` instead of bashing each letter until you die. This also ends the game early if you would like to access the [Editing Menu](#Editing).
 
 ![Hangman solve/give up](demo_images/solve.gif)
 
 ### Not A Letter
-What happens when you try entering more than one character that's not a letter? Let's find out.
+What happens when you try entering more than one character at a time or isn't a letter at all? Let's find out.
 
 ![Hangman not a letter prompt](demo_images/notaletter.gif)
 
-The good news is that UPPERCASE and lowercase of the same letter count as the same guess meaning that you won't be penalized for guessing the same letter more than once by accident. Or accidentally inputing a number or special character like "!".
+The good news is that the UPPERCASE and lowercase of the same letter count as the same guess. This means that you won't be penalized for guessing the same letter more than once by accident. Or accidentally inputing a number or special character like "!/?>&...".
 
 Trying to guess more than one character at a time is cheating!
 
 ### Editing
 You can call `edit` before and after a new game to add or remove words from the current list. This cannot be done while you are playing Hangman.
 
-In Editing, you can add and remove words, peek at the full word list and save a custom word list. The default word list can be found within the `hangman.py` file itself. It is a list of 65 different animals. If `hangman_words.txt` was not found or couldn't load properly, Hangman will continue to run using the default word list.
+In Editing, you can add and remove words, peek at the full word list, and save a custom word list. The default word list can be found within the `hangman.py` file itself. It is a list of 65 different animals. If `hangman_words.txt` was not found or couldn't load properly, Hangman will continue to run using the default word list.
 
 #### Adding Words
 You can add as many words as you like so long as they do NOT contain:
@@ -66,7 +66,7 @@ You can add as many words as you like so long as they do NOT contain:
 - special characters.
 Words must be added one at a time and have a minimum of two characters.
 
-![Adding and peeking at words](demo_images/adding_words.png)
+![Adding and peeking at words](demo_images/adding_words.gif)
 
 In the above example, the words "cookie" and "pie" were added, they are shown at the bottom of the word list in the final word list peek.
 
