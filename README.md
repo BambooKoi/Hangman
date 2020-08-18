@@ -13,6 +13,7 @@ Why not play a game (or more) of Hangman? Made with Python. Play using the defau
     - [Editing](#Editing)
 - [Built With](#Built-With)
 - [Running the Game](#Running-the-Game)
+- [Changelog](#Changelog)
 - [License](#License)
 - [Acknowledgements](#Acknowledgements)
 - [Donations (Optional)](#Donations-(Optional))
